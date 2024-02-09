@@ -1,0 +1,66 @@
+body{
+    padding:0;
+    margin:0;
+    font-family:"poppins" sans-serif;
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.carterotation{
+    width: 280px;
+    height: 480px;
+    background: #333;
+    cursor: pointer;
+    transition: background 0.4s linear;
+}
+.headphoto{
+    height: 45%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:1px solid gold;
+}
+.cercle{
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    background: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0,4 background linear;
+}
+.headphoto .cercle svg {
+    width: 80px;
+    fill:#333;
+}
+h2{
+    text-align: center;
+    color:#f1f1f1;
+    transition: 0.4s color linear;
+}
+.txt{
+    color: #f1f1f1;
+    font-size: 18px;
+    padding: 20px;
+    text-align:justify;
+    transition: 0.4s color linear;
+}
+.carterotation:hover{
+    background: #f5cb22;
+}
+.carterotation:hover .cercle{
+    background: #333;
+}
+.carterotation:hover .cercle svg{
+    transition:0.4s all linear;
+    fill: gold;
+    transform:rotateY(360deg) ;
+}
+.carterotation:hover .txt{
+    color: #333;
+}
+.carterotation:hover h2{
+    color: #333;
+}
